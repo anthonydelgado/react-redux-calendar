@@ -1,3 +1,5 @@
+# React Redux Calendar
+
 For this assignment, you will be building a very simple Calendar application. To build this application it should take you about 48 working hours maximum (including familiarizing with concepts for Redux). 
 
 Please use the following technologies/frameworks to build this application: MySQL, Node with Express, React with Redux, and HTML5 with Bootstrap.
