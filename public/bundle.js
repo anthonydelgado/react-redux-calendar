@@ -23742,7 +23742,7 @@
 /* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -23772,12 +23772,129 @@
 	  }
 
 	  _createClass(App, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'React simple Cal'
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "jumbotron" },
+	          _react2.default.createElement(
+	            "h1",
+	            { className: "display-3" },
+	            "React Redux Calendar!"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { className: "lead" },
+	            "This is a simple calendar app built using React, Redux, Node, Express, MYSQL and Bootstrap!"
+	          ),
+	          _react2.default.createElement("hr", { className: "my-4" }),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cum, dolorum ducimus eum eveniet, ex facere ipsa laboriosam laborum magni molestias nulla officia omnis quae quasi, quibusdam velit!"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { className: "lead" },
+	            _react2.default.createElement(
+	              "button",
+	              { type: "button", className: "btn btn-primary btn-lg", "data-toggle": "modal", "data-target": "#eventModal" },
+	              "Add New Event"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "modal fade", id: "eventModal", tabIndex: "-1", role: "dialog", "aria-labelledby": "exampleModalLabel", "aria-hidden": "true" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "modal-dialog", role: "document" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "modal-content" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "modal-header" },
+	                _react2.default.createElement(
+	                  "h5",
+	                  { className: "modal-title", id: "exampleModalLabel" },
+	                  "Add an Event"
+	                ),
+	                _react2.default.createElement(
+	                  "button",
+	                  { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { "aria-hidden": "true" },
+	                    "\xD7"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "modal-body" },
+	                "Please fill in the event details below.",
+	                _react2.default.createElement("br", null),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement("input", { type: "text", className: "form-control", max: "100", name: "title", placeholder: "Event Title" })
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement("textarea", { type: "text", className: "form-control", name: "description", placeholder: "Description" })
+	                ),
+	                _react2.default.createElement("br", null),
+	                _react2.default.createElement(
+	                  "div",
+	                  { "class": "dropdown" },
+	                  _react2.default.createElement(
+	                    "button",
+	                    { "class": "btn btn-primary dropdown-toggle", type: "button", id: "dropdownMenuButton", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false" },
+	                    "Event Type"
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "dropdown-menu", "aria-labelledby": "dropdownMenuButton" },
+	                    _react2.default.createElement(
+	                      "a",
+	                      { className: "dropdown-item", href: "#" },
+	                      "Hackathon"
+	                    ),
+	                    _react2.default.createElement(
+	                      "a",
+	                      { className: "dropdown-item", href: "#" },
+	                      "Meetup"
+	                    ),
+	                    _react2.default.createElement(
+	                      "a",
+	                      { className: "dropdown-item", href: "#" },
+	                      "Conference"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "modal-footer" },
+	                _react2.default.createElement(
+	                  "button",
+	                  { type: "button", className: "btn btn-secondary", "data-dismiss": "modal" },
+	                  "Close"
+	                ),
+	                _react2.default.createElement(
+	                  "button",
+	                  { type: "button", className: "btn btn-primary" },
+	                  "Save changes"
+	                )
+	              )
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
